@@ -1,0 +1,122 @@
+[
+  {
+    "id": "T001",
+    "min_age": 30,
+    "max_age": 60,
+    "location": "Hyderabad",
+    "conditions": ["diabetes"],
+    "excluded_conditions": ["cancer"]
+  },
+  {
+    "id": "T002",
+    "min_age": 25,
+    "max_age": 40,
+    "location": "Delhi",
+    "conditions": ["hypertension"],
+    "excluded_conditions": []
+  },
+  {
+    "id": "T003",
+    "min_age": 20,
+    "max_age": 45,
+    "location": "Hyderabad",
+    "conditions": ["hypertension", "diabetes"],
+    "excluded_conditions": ["asthma"]
+  },
+  {
+    "id": "T004",
+    "min_age": 40,
+    "max_age": 70,
+    "location": "Hyderabad",
+    "conditions": ["cancer"],
+    "excluded_conditions": ["diabetes"]
+  },
+  {
+    "id": "T005",
+    "min_age": 18,
+    "max_age": 35,
+    "location": "Chennai",
+    "conditions": ["migraine"],
+    "excluded_conditions": []
+  },
+  {
+    "id": "T006",
+    "min_age": 30,
+    "max_age": 55,
+    "location": "Bangalore",
+    "conditions": ["arthritis"],
+    "excluded_conditions": ["hypertension"]
+  },
+  {
+    "id": "T007",
+    "min_age": 50,
+    "max_age": 75,
+    "location": "Hyderabad",
+    "conditions": ["diabetes", "cholesterol"],
+    "excluded_conditions": ["asthma"]
+  },
+  {
+    "id": "T008",
+    "min_age": 25,
+    "max_age": 45,
+    "location": "Delhi",
+    "conditions": ["hypertension", "asthma"],
+    "excluded_conditions": ["cancer"]
+  },
+  {
+    "id": "T009",
+    "min_age": 18,
+    "max_age": 65,
+    "location": "Hyderabad",
+    "conditions": ["thyroid"],
+    "excluded_conditions": []
+  },
+  {
+    "id": "T010",
+    "min_age": 30,
+    "max_age": 60,
+    "location": "Mumbai",
+    "conditions": ["heart disease"],
+    "excluded_conditions": ["hypertension"]
+  },
+  {
+    "id": "T011",
+    "min_age": 20,
+    "max_age": 50,
+    "location": "Hyderabad",
+    "conditions": ["asthma"],
+    "excluded_conditions": []
+  },
+  {
+    "id": "T012",
+    "min_age": 25,
+    "max_age": 45,
+    "location": "Bangalore",
+    "conditions": ["hypertension", "obesity"],
+    "excluded_conditions": []
+  },
+  {
+    "id": "T013",
+    "min_age": 40,
+    "max_age": 70,
+    "location": "Chennai",
+    "conditions": ["cholesterol"],
+    "excluded_conditions": ["diabetes"]
+  },
+  {
+    "id": "T014",
+    "min_age": 30,
+    "max_age": 50,
+    "location": "Hyderabad",
+    "conditions": ["diabetes", "obesity"],
+    "excluded_conditions": ["cancer"]
+  },
+  {
+    "id": "T015",
+    "min_age": 18,
+    "max_age": 40,
+    "location": "Hyderabad",
+    "conditions": ["hypertension"],
+    "excluded_conditions": ["migraine"]
+  }
+]

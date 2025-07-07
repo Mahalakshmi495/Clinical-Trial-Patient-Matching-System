@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Clinical Trial Matcher</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h2>Clinical Trial Matching System</h2>
+    <form id="patientForm">
+        <label>Age:</label><input type="number" name="age" required><br>
+        <label>Gender:</label><input type="text" name="gender"><br>
+        <label>Location:</label><input type="text" name="location" required><br>
+        <label>Conditions (comma separated):</label><input type="text" name="conditions"><br>
+        <button type="submit">Match Trials</button>
+    </form>
+    <h3>Matching Trials:</h3>
+    <ul id="results"></ul>
+
+    <script>
+        document.getElementById('patientForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+            const data = {
+                age: parseInt(this.age.value),
+                gender: this.gender.value,
+                location: this.location.value,
+                conditions: this.conditions.value.split(',').map(c => c.trim())
+            };
+            fetch('/match', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(data)
+            }).then(res => res.json()).then(matches => {
+                const list = document.getElementById('results');
+                list.innerHTML = '';
+                if (matches.length === 0) {
+                    list.innerHTML = '<li>No matching trials found.</li>';
+                } else {
+                    matches.forEach(m => {
+                        const li = document.createElement('li');
+                        li.textContent = `Trial ID: ${m[0]} - Score: ${m[1]}`;
+                        list.appendChild(li);
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
